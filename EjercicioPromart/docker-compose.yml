@@ -6,11 +6,8 @@ services:
   image: mcr.microsoft.com/mssql/server:2019-latest
   environment:
    ACCEPT_EULA:"Y"
-   SA_PASSWORD:"Ig2PtCd1"
-   MSSQL_PID: Express
+   SA_PASSWORD:"123456"
+   MSSQL_PID: Developer
   ports:
    - "1433:1433"
- colour-api:
-  build: .
-  ports:
-   - "8080:80"
+ 
